@@ -10,7 +10,7 @@
 				"//*[@id='wp-custom-css']"
 			]
 		},
-		"dupal": {
+		"drupal": {
 			"headers": [],
 			"body": [
 				"/html/head/meta[contains(@content, 'rupal')]",

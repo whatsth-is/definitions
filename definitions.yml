@@ -1,0 +1,47 @@
+---
+cms:
+  wordpress:
+    headers:
+    - 'x-powered-by: WP Engine'
+    body:
+    - "/html/head/link[@rel='https://api.w.org/']"
+    - "/html/head/link[@href='//s.w.org']"
+    - "//*[@id='wp-custom-css']"
+  drupal:
+    body:
+    - "/html/head/meta[contains(@content, 'rupal')]"
+    - "//a[@data-drupal-link-system-path]"
+  joomla:
+    body:
+    - "/html/head/script[contains(@class, 'joomla')]"
+  discourse:
+    body:
+    - "/html/head/meta[contains(@content, 'iscourse')]"
+    - "/html/head/meta[@name='discourse_theme_id']"
+    - "/html/head/meta[@name='discourse_current_homepage']"
+    - "/html/head/link[contains(@href,'discourse-cdn.com')]"
+  shopify:
+    body:
+    - "/html/head/link[contains(@href,'//cdn.shopify.com')]"
+  phpbb:
+    body:
+    - "/html/body[@id='phpbb']"
+    - "/html/body/script[contains(@src, 'prosilver/template/ajax.js')]"
+    - "//form[contains(@action, 'ucp.php')]"
+    - "/html/head/meta[@content='phpBB']"
+  mediawiki:
+    body:
+    - "//a[@href='//www.mediawiki.org/']"
+    - "//body[contains(@class, 'mediawiki')]"
+  xenforo:
+    body:
+    - "//footer//a[@href='https://xenforo.com']"
+  wix:
+    body:
+    - "/html/head/link[@href='https://www.wix.com']"
+  squarespace:
+    headers:
+    - 'server: Squarespace'
+    body:
+    - "/html/head/link[@href='https://images.squarespace-cdn.com']"
+    - "/html/head/script[contains(@src,'//assets.squarespace.com')]"

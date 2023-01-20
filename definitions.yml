@@ -44,3 +44,6 @@ cms:
     body:
     - "/html/head/link[@href='https://images.squarespace-cdn.com']"
     - "/html/head/script[contains(@src,'//assets.squarespace.com')]"
+  jekyll:
+    body:
+    - "/html/head/meta[contains(@content, 'ekyll')]"

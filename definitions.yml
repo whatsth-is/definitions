@@ -127,3 +127,33 @@ frontend:
   foundation:
     body:
     - "//link[contains(@href, 'foundation.min.css')] | //script[contains(text(), 'foundation.min.js')]"
+javascript:
+  gtm:
+    body:
+    - "//script[contains(text(), 'google_tag_manager')]"
+    - "//iframe[contains(@src, 'www.googletagmanager.com/ns.html?id=')]"
+  google-analytics:
+    body:
+    - "//script[contains(text(), 'ga(')]"
+    - "//script[contains(text(), 'UA-')]"
+  d3:
+    body:
+    - "//script[contains(text(), 'd3.js')]"
+  three:
+    body:
+    - "//script[contains(text(), 'three.js')]"
+  gsap:
+    body:
+    - "//script[contains(text(), 'gsap.min.js')]"
+  lodash:
+    body:
+    - "//script[contains(text(), 'lodash.min.js')]"
+  moment:
+    body:
+    - "//script[contains(text(), 'moment.js')]"
+  axios:
+    body:
+    - "//script[contains(text(), 'axios.min.js')]"
+  leaflet:
+    body:
+    - "//link[contains(@href, 'leaflet.css')] | //script[contains(text(), 'leaflet.js')]"

@@ -63,14 +63,12 @@ cms:
     body:
     - "//meta[@name='generator' and contains(@content, 'Kentico')]"
     - "//form[contains(@action, 'CMSPages/logon.aspx')]"
-    - "//header[contains(@class, 'header')]"
   umbraco:
     description: "A free and open-source content management system (CMS) that is widely used for building websites and web applications. Umbraco provides a flexible platform for creating content, managing users, and integrating with other systems."
     url: "https://umbraco.com/"
     body:
     - "//meta[@name='generator' and contains(@content, 'Umbraco')]"
     - "//form[contains(@action, '/umbraco/login')]"
-    - "//header[@id='header']"
   shopify:
     description: "A cloud-based e-commerce platform that provides a flexible and scalable solution for selling products online. Shopify provides a range of features for creating an online store, managing products and orders, and integrating with other services."
     url: "https://www.shopify.com/"

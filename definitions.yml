@@ -223,3 +223,24 @@ javascript:
     url: "https://leafletjs.com/"
     body:
     - "//link[contains(@href, 'leaflet.css')] | //script[contains(text(), 'leaflet.js')]"
+cdn:
+  Fastly:
+    description: "A content delivery network that provides fast and scalable delivery of website content. Fastly is known for its edge computing capabilities, which enable developers to build custom logic and functionality into their CDN workflows."
+    url: "https://www.fastly.com/"
+    body:
+    - "//script[contains(@src, 'fastly.net')]"
+  Cloudflare:
+    description: "A content delivery network that provides fast and secure delivery of website content. Cloudflare is known for its edge computing capabilities, which enable developers to build custom logic and functionality into their CDN workflows, as well as its range of security features, including DDoS protection and Web Application Firewall (WAF) capabilities."
+    url: "https://www.cloudflare.com/"
+    body:
+    - "//script[contains(@src, 'cloudflare.com')]"
+  Akamai:
+    description: "A content delivery network that provides fast and reliable delivery of website content. Akamai is known for its edge computing capabilities, which enable developers to build custom logic and functionality into their CDN workflows, as well as its range of security and performance features."
+    url: "https://www.akamai.com/"
+    body:
+    - "//script[contains(@src, 'akamai.net')]"
+  AWS-CloudFront:
+    description: "A content delivery network from Amazon Web Services (AWS) that provides fast and scalable delivery of website content. AWS CloudFront is known for its integration with other AWS services, such as Amazon S3 and Amazon EC2, as well as its range of security and performance features."
+    url: "https://aws.amazon.com/cloudfront/"
+    body:
+    - "//script[contains(@src, 'cloudfront.net')]"

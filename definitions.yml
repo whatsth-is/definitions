@@ -43,6 +43,16 @@ cms:
     - "//meta[@name='generator' and contains(@content, 'Ghost')]"
     - "//form[@id='signin-form']"
     - "//header[contains(@class, 'site-header')]"
+  kentico:
+    body:
+    - "//meta[@name='generator' and contains(@content, 'Kentico')]"
+    - "//form[contains(@action, 'CMSPages/logon.aspx')]"
+    - "//header[contains(@class, 'header')]"
+  umbraco:
+    body:
+    - "//meta[@name='generator' and contains(@content, 'Umbraco')]"
+    - "//form[contains(@action, '/umbraco/login')]"
+    - "//header[@id='header']"
   shopify:
     body:
     - "//meta[@name='generator' and contains(@content, 'Shopify')]"

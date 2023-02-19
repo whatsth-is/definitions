@@ -223,6 +223,16 @@ javascript:
     url: "https://leafletjs.com/"
     body:
     - "//link[contains(@href, 'leaflet.css')] | //script[contains(text(), 'leaflet.js')]"
+  Vimeo:
+    description: "A video hosting and streaming platform that provides a range of features for creating, managing, and sharing video content. Vimeo is known for its clean and modern design, as well as its range of customization options and integrations with other services."
+    url: "https://vimeo.com/"
+    body:
+    - "//script[contains(@src, 'player.vimeo.com')]"
+  Wistia:
+    description: "A video hosting and analytics platform that provides a range of features for creating, managing, and analyzing video content. Wistia is known for its clean and modern design, as well as its range of customization options and analytics features."
+    url: "https://wistia.com/"
+    body:
+    - "//script[contains(@src, 'wistia.com')]"
 cdn:
   Fastly:
     description: "A content delivery network that provides fast and scalable delivery of website content. Fastly is known for its edge computing capabilities, which enable developers to build custom logic and functionality into their CDN workflows."

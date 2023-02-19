@@ -105,3 +105,25 @@ cms:
     - "//meta[@name='generator' and contains(@content, 'Hugo')]"
     - "//footer[contains(@class, 'site-footer')]"
     - "//header[contains(@class, 'site-header')]"
+frontend:
+  jquery:
+    body:
+    - "//script[contains(text(), 'jQuery')]"
+  react:
+    body:
+    - "//script[contains(text(), 'React')]"
+  angular:
+    body:
+    - "//script[contains(text(), 'angular.min.js')] | //script[contains(text(), 'ng-app')]"
+  vue:
+    body:
+    - "//script[contains(text(), 'Vue')]"
+  bootstrap:
+    body:
+    - "//link[contains(@href, 'bootstrap.min.css')] | //script[contains(text(), 'bootstrap.min.js')]"
+  materialize:
+    body:
+    - "//link[contains(@href, 'materialize.min.css')] | //script[contains(text(), 'materialize.min.js')]"
+  foundation:
+    body:
+    - "//link[contains(@href, 'foundation.min.css')] | //script[contains(text(), 'foundation.min.js')]"

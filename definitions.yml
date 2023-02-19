@@ -3,47 +3,95 @@ cms:
     headers:
     - 'x-powered-by: WP Engine'
     body:
+    - "//meta[@name='generator' and contains(@content, 'WordPress')]"
+    - "//*[contains(@href, 'wp-content')]"
+    - "//form[contains(@action, 'wp-login.php')]"
     - "/html/head/link[@rel='https://api.w.org/']"
     - "/html/head/link[@href='//s.w.org']"
     - "//*[@id='wp-custom-css']"
   drupal:
     body:
-    - "/html/head/meta[contains(@content, 'rupal')]"
+    - "//meta[@name='generator' and contains(@content, 'Drupal')]"
+    - "//form[contains(@action, '/user/login')]"
+    - "//link[contains(@href, '/core/assets/vendor/normalize-css/normalize.css')]"
     - "//a[@data-drupal-link-system-path]"
   joomla:
     body:
-    - "/html/head/script[contains(@class, 'joomla')]"
+    - "//meta[@name='generator' and contains(@content, 'Joomla')]"
+    - "//form[contains(@action, '/index.php/component/users/')]"
+    - "//link[contains(@href, '/index.php?option=com_xmlrpc&controller=xmlrpc&task=server')]"
   discourse:
     body:
-    - "/html/head/meta[contains(@content, 'iscourse')]"
+    - "//meta[@name='generator' and contains(@content, 'Discourse')]"
+    - "//form[@id='login-form']"
+    - "//header[@class='d-header']"
     - "/html/head/meta[@name='discourse_theme_id']"
     - "/html/head/meta[@name='discourse_current_homepage']"
     - "/html/head/link[contains(@href,'discourse-cdn.com')]"
+  magento:
+    body:
+    - "//meta[@name='generator' and contains(@content, 'Magento')]"
+    - "//form[contains(@action, 'customer/account/login')]"
+    - "//header[@class='page-header']"
+  concrete5:
+    body:
+    - "//meta[@name='generator' and contains(@content, 'concrete5')]"
+    - "//form[contains(@action, '/login')]"
+    - "//div[@class='ccm-header-inner']"
+  ghost:
+    body:
+    - "//meta[@name='generator' and contains(@content, 'Ghost')]"
+    - "//form[@id='signin-form']"
+    - "//header[contains(@class, 'site-header')]"
   shopify:
     body:
+    - "//meta[@name='generator' and contains(@content, 'Shopify')]"
+    - "//form[contains(@action, '/checkout')]"
+    - "//a[contains(@class, 'shopify-logo') or contains(@class, 'shopify-badge')]"
     - "/html/head/link[contains(@href,'//cdn.shopify.com')]"
   phpbb:
     body:
+    - "//meta[@name='generator' and contains(@content, 'phpBB')]"
+    - "//form[contains(@action, 'ucp.php?mode=login')]"
+    - "//div[@id='site-description']"
     - "/html/body[@id='phpbb']"
     - "/html/body/script[contains(@src, 'prosilver/template/ajax.js')]"
     - "//form[contains(@action, 'ucp.php')]"
-    - "/html/head/meta[@content='phpBB']"
   mediawiki:
     body:
+    - "//meta[@name='generator' and contains(@content, 'MediaWiki')]"
+    - "//form[@id='searchform']"
+    - "//div[@id='p-logo']//a//img"
     - "//a[@href='//www.mediawiki.org/']"
     - "//body[contains(@class, 'mediawiki')]"
   xenforo:
     body:
+    - "//meta[@name='generator' and contains(@content, 'XenForo')]"
+    - "//form[contains(@action, 'login/login')]"
+    - "//a[contains(@class, 'p-header-logo')]/img"
     - "//footer//a[@href='https://xenforo.com']"
   wix:
     body:
     - "/html/head/link[@href='https://www.wix.com']"
+    - "//script[contains(@src, 'static.parastorage.com')]"
+    - "//*[contains(comment(), 'This site was created using Wix.com')]"
   squarespace:
     headers:
     - 'server: Squarespace'
     body:
+    - "//meta[@name='generator' and contains(@content, 'Squarespace')]"
+    - "//form[contains(@action, '/api/account/login')]"
+    - "//div[contains(@class, 'Header-branding')]"
     - "/html/head/link[@href='https://images.squarespace-cdn.com']"
     - "/html/head/script[contains(@src,'//assets.squarespace.com')]"
   jekyll:
     body:
+    - "//meta[@name='generator' and contains(@content, 'Jekyll')]"
+    - "//*[contains(text(), '---\nlayout:')]"
+    - "//header[contains(@class, 'site-header')]"
     - "/html/head/meta[contains(@content, 'ekyll')]"
+  hugo:
+    body:
+    - "//meta[@name='generator' and contains(@content, 'Hugo')]"
+    - "//footer[contains(@class, 'site-footer')]"
+    - "//header[contains(@class, 'site-header')]"

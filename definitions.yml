@@ -1,5 +1,6 @@
 cms:
   wordpress:
+    name: "WordPress"
     description: "A free and open-source content management system (CMS) that powers over 40% of the web. WordPress provides a flexible platform for creating blogs, websites, and e-commerce stores, and is known for its ease of use and customization options."
     url: "https://wordpress.org/"
     headers:
@@ -12,6 +13,7 @@ cms:
     - "/html/head/link[@href='//s.w.org']"
     - "//*[@id='wp-custom-css']"
   drupal:
+    name: "Drupal"
     description: "A free and open-source content management system (CMS) that is widely used for building complex and scalable websites. Drupal provides a flexible platform for creating content, managing users, and integrating with other systems."
     url: "https://www.drupal.org/"
     body:
@@ -20,6 +22,7 @@ cms:
     - "//link[contains(@href, '/core/assets/vendor/normalize-css/normalize.css')]"
     - "//a[@data-drupal-link-system-path]"
   joomla:
+    name: "Joomla!"
     description: "A free and open-source content management system (CMS) that is known for its ease of use and extensibility. Joomla provides a platform for creating websites, online applications, and e-commerce stores."
     url: "https://www.joomla.org/"
     body:
@@ -27,6 +30,7 @@ cms:
     - "//form[contains(@action, '/index.php/component/users/')]"
     - "//link[contains(@href, '/index.php?option=com_xmlrpc&controller=xmlrpc&task=server')]"
   discourse:
+    name: "Discourse"
     description: "An open-source forum and community software that provides a modern and user-friendly platform for discussion and collaboration. Discourse is known for its flexibility and extensibility, and provides a range of features for moderating and customizing online communities."
     url: "https://www.discourse.org/"
     body:
@@ -37,6 +41,7 @@ cms:
     - "/html/head/meta[@name='discourse_current_homepage']"
     - "/html/head/link[contains(@href,'discourse-cdn.com')]"
   magento:
+    name: "Magento"
     description: "An open-source e-commerce platform that provides a powerful and flexible solution for building online stores. Magento provides a range of features for managing products, orders, payments, and shipping, and is known for its flexibility and extensibility."
     url: "https://magento.com/"
     body:
@@ -44,6 +49,7 @@ cms:
     - "//form[contains(@action, 'customer/account/login')]"
     - "//header[@class='page-header']"
   concrete5:
+    name: "Concrete5"
     description: "A free and open-source content management system (CMS) that is designed for building websites and web applications. Concrete5 provides a flexible platform for creating content, managing users, and integrating with other systems."
     url: "https://www.concretecms.com/"
     body:
@@ -51,6 +57,7 @@ cms:
     - "//form[contains(@action, '/login')]"
     - "//div[@class='ccm-header-inner']"
   ghost:
+    name: "Ghost"
     description: "An open-source content management system (CMS) that is designed specifically for creating blogs and online publications. Ghost provides a simple and easy-to-use platform for publishing content, and is known for its clean and modern design."
     url: "https://ghost.org/"
     body:
@@ -58,18 +65,21 @@ cms:
     - "//form[@id='signin-form']"
     - "//header[contains(@class, 'site-header')]"
   kentico:
+    name: "Kentico"
     description: "A proprietary content management system (CMS) that provides a range of features for creating and managing websites, e-commerce stores, and online communities. Kentico is known for its flexible and extensible platform, and provides a range of marketing and analytics features."
     url: "https://www.kentico.com/"
     body:
     - "//meta[@name='generator' and contains(@content, 'Kentico')]"
     - "//form[contains(@action, 'CMSPages/logon.aspx')]"
   umbraco:
+    name: "Umbraco"
     description: "A free and open-source content management system (CMS) that is widely used for building websites and web applications. Umbraco provides a flexible platform for creating content, managing users, and integrating with other systems."
     url: "https://umbraco.com/"
     body:
     - "//meta[@name='generator' and contains(@content, 'Umbraco')]"
     - "//form[contains(@action, '/umbraco/login')]"
   shopify:
+    name: "Shopify"
     description: "A cloud-based e-commerce platform that provides a flexible and scalable solution for selling products online. Shopify provides a range of features for creating an online store, managing products and orders, and integrating with other services."
     url: "https://www.shopify.com/"
     body:
@@ -78,6 +88,7 @@ cms:
     - "//a[contains(@class, 'shopify-logo') or contains(@class, 'shopify-badge')]"
     - "/html/head/link[contains(@href,'//cdn.shopify.com')]"
   phpbb:
+    name: "PhpBB"
     description: "An open-source forum software that provides a flexible platform for building online communities. phpBB is known for its ease of use and customization options, and provides a range of features for moderating and managing online discussions."
     url: "https://www.phpbb.com/"
     body:
@@ -88,6 +99,7 @@ cms:
     - "/html/body/script[contains(@src, 'prosilver/template/ajax.js')]"
     - "//form[contains(@action, 'ucp.php')]"
   mediawiki:
+    name: "MediaWiki"
     description: "A free and open-source wiki software that is widely used for creating collaborative online encyclopedias and knowledge bases. MediaWiki is known for its flexibility and extensibility, and provides a range of features for organizing and managing content."
     url: "https://www.mediawiki.org/"
     body:
@@ -97,6 +109,7 @@ cms:
     - "//a[@href='//www.mediawiki.org/']"
     - "//body[contains(@class, 'mediawiki')]"
   xenforo:
+    name: "XenForo"
     description: "A proprietary forum software that provides a modern and user-friendly platform for discussion and collaboration. XenForo is known for its clean and customizable design, and provides a range of features for moderating and customizing online communities."
     url: "https://xenforo.com/"
     body:
@@ -105,6 +118,7 @@ cms:
     - "//a[contains(@class, 'p-header-logo')]/img"
     - "//footer//a[@href='https://xenforo.com']"
   wix:
+    name: "Wix"
     description: "A cloud-based website builder that provides a range of templates and design tools for creating websites. Wix is known for its ease of use and provides a range of features for building and customizing websites without needing to know how to code."
     url: "https://www.wix.com/"
     body:
@@ -112,6 +126,7 @@ cms:
     - "//script[contains(@src, 'static.parastorage.com')]"
     - "//*[contains(comment(), 'This site was created using Wix.com')]"
   squarespace:
+    name: "Squarespace"
     description: "A cloud-based website builder that provides a range of templates and design tools for creating websites. Squarespace is known for its clean and modern designs, and provides a range of features for building and customizing websites."
     url: "https://www.squarespace.com/"
     headers:
@@ -123,6 +138,7 @@ cms:
     - "/html/head/link[@href='https://images.squarespace-cdn.com']"
     - "/html/head/script[contains(@src,'//assets.squarespace.com')]"
   jekyll:
+    name: "Jekyll"
     description: "A static site generator that provides a simple and flexible platform for creating blogs, portfolios, and other simple websites. Jekyll is known for its speed and simplicity, and provides a range of features for managing content and customizing designs."
     url: "https://jekyllrb.com/"
     body:
@@ -131,6 +147,7 @@ cms:
     - "//header[contains(@class, 'site-header')]"
     - "/html/head/meta[contains(@content, 'ekyll')]"
   hugo:
+    name: "Hugo"
     description: "A static site generator that provides a flexible and extensible platform for creating blogs, documentation sites, and other static websites. Hugo is known for its speed and ease of use, and provides a range of features for managing content and customizing designs."
     url: "https://gohugo.io/"
     body:
@@ -138,116 +155,138 @@ cms:
     - "//footer[contains(@class, 'site-footer')]"
     - "//header[contains(@class, 'site-header')]"
 frontend:
-  jquery:
-    description: "A popular JavaScript library that simplifies HTML document traversal and manipulation, event handling, and AJAX interactions."
-    url: "https://jquery.com/"
-    body:
-    - "//script[contains(text(), 'jQuery')]"
   react:
+    name: "React"
     description: "A JavaScript library for building user interfaces. React uses a declarative programming style and is widely used for building single-page applications."
     url: "https://reactjs.org/"
     body:
     - "//script[contains(text(), 'React')]"
   angular:
+    name: "Angular"
     description: "A JavaScript framework for building web applications. Angular uses a model-view-controller (MVC) architecture and is known for its two-way data binding and dependency injection features."
     url: "https://angular.io/"
     body:
     - "//script[contains(text(), 'angular.min.js')] | //script[contains(text(), 'ng-app')]"
   vue:
+    name: "Vue.js"
     description: "A progressive JavaScript framework for building user interfaces. Vue.js emphasizes the use of templates and components, and is known for its simplicity and ease of use."
     url: "https://vuejs.org/"
     body:
     - "//script[contains(text(), 'Vue')]"
   bootstrap:
+    name: "Bootstrap"
     description: "A popular front-end framework that includes HTML, CSS, and JavaScript components for building responsive, mobile-first web pages and applications."
     url: "https://getbootstrap.com/"
     body:
     - "//link[contains(@href, 'bootstrap.min.css')] | //script[contains(text(), 'bootstrap.min.js')]"
   materialize:
+    name: "Materialize"
     description: "A CSS framework that is based on Google's Material Design language. Materialize includes a set of pre-built UI components and can be used to quickly create clean and modern interfaces."
     url: "https://materializecss.com/"
     body:
     - "//link[contains(@href, 'materialize.min.css')] | //script[contains(text(), 'materialize.min.js')]"
   foundation:
+    name: "Foundation"
     description: "A responsive front-end framework that includes HTML, CSS, and JavaScript components. Foundation is known for its flexibility and can be customized to fit a variety of design needs."
     url: "https://foundation.zurb.com/"
     body:
     - "//link[contains(@href, 'foundation.min.css')] | //script[contains(text(), 'foundation.min.js')]"
 javascript:
+  jquery:
+    name: "JQuery"
+    description: "A popular JavaScript library that simplifies HTML document traversal and manipulation, event handling, and AJAX interactions."
+    url: "https://jquery.com/"
+    body:
+    - "//script[contains(text(), 'jQuery')]"
   gtm:
+    name: "Google Tag Manager"
     description: "A free tag management system from Google that allows website owners to easily manage and deploy marketing and analytics tags on their website."
     url: "https://marketingplatform.google.com/about/tag-manager/"
     body:
     - "//script[contains(text(), 'google_tag_manager')]"
     - "//iframe[contains(@src, 'www.googletagmanager.com/ns.html?id=')]"
   google-analytics:
+    name: "Google Analytics"
     description: "A free web analytics service from Google that tracks and reports website traffic. Google Analytics provides detailed data on user behavior, including traffic sources, pageviews, and user demographics."
     url: "https://marketingplatform.google.com/about/analytics/"
     body:
     - "//script[contains(text(), 'ga(')]"
     - "//script[contains(text(), 'UA-')]"
   d3:
+    name: "D3.js"
     description: "A JavaScript library for data visualization. D3.js provides a powerful set of tools for creating interactive charts and graphs using HTML, SVG, and CSS."
     url: "https://d3js.org/"
     body:
     - "//script[contains(text(), 'd3.js')]"
   three:
+    name: "three.js"
     description: "A JavaScript library for creating 3D graphics in the browser. Three.js provides a high-level API for working with 3D objects and scenes, and is often used for creating interactive web applications and games."
     url: "https://threejs.org/"
     body:
     - "//script[contains(text(), 'three.js')]"
   gsap:
+    name: "GSAP"
     description: "A JavaScript animation library that provides a powerful set of tools for creating animations and effects on the web. GSAP is known for its performance and ease of use, and is often used for creating interactive interfaces and user experiences."
     url: "https://greensock.com/gsap/"
     body:
     - "//script[contains(text(), 'gsap.min.js')]"
   lodash:
+    name: "Lodash"
     description: "A JavaScript utility library that provides a wide range of functions for working with arrays, objects, and other data structures. Lodash is often used to simplify complex data manipulation tasks and to provide functional programming features in JavaScript."
     url: "https://lodash.com/"
     body:
     - "//script[contains(text(), 'lodash.min.js')]"
   moment:
+    name: "Moment.js"
     description: "A JavaScript library for working with dates and times. Moment.js provides a simple and flexible API for parsing, formatting, and manipulating dates and times in JavaScript."
     url: "https://momentjs.com/"
     body:
     - "//script[contains(text(), 'moment.js')]"
   axios:
+    name: "Axios"
     description: "A popular JavaScript library for making HTTP requests from the browser. Axios supports a wide range of request and response formats, including JSON, XML, and FormData."
     url: "https://axios-http.com/"
     body:
     - "//script[contains(text(), 'axios.min.js')]"
   leaflet:
+    name: "Leaflet"
     description: "A JavaScript library for building interactive maps and geospatial applications. Leaflet provides a simple and flexible API for creating map tiles, markers, popups, and other interactive elements."
     url: "https://leafletjs.com/"
     body:
     - "//link[contains(@href, 'leaflet.css')] | //script[contains(text(), 'leaflet.js')]"
   Vimeo:
+    name: "Vimeo"
     description: "A video hosting and streaming platform that provides a range of features for creating, managing, and sharing video content. Vimeo is known for its clean and modern design, as well as its range of customization options and integrations with other services."
     url: "https://vimeo.com/"
     body:
     - "//script[contains(@src, 'player.vimeo.com')]"
   Wistia:
+    name: "Wistia"
     description: "A video hosting and analytics platform that provides a range of features for creating, managing, and analyzing video content. Wistia is known for its clean and modern design, as well as its range of customization options and analytics features."
     url: "https://wistia.com/"
     body:
     - "//script[contains(@src, 'wistia.com')]"
 cdn:
   Fastly:
+    name: "Fastly"
     description: "A content delivery network that provides fast and scalable delivery of website content. Fastly is known for its edge computing capabilities, which enable developers to build custom logic and functionality into their CDN workflows."
     url: "https://www.fastly.com/"
     body:
     - "//script[contains(@src, 'fastly.net')]"
   Cloudflare:
+    name: "Cloudflare"
     description: "A content delivery network that provides fast and secure delivery of website content. Cloudflare is known for its edge computing capabilities, which enable developers to build custom logic and functionality into their CDN workflows, as well as its range of security features, including DDoS protection and Web Application Firewall (WAF) capabilities."
     url: "https://www.cloudflare.com/"
     body:
     - "//script[contains(@src, 'cloudflare.com')]"
   Akamai:
+    name: "Akamai"
     description: "A content delivery network that provides fast and reliable delivery of website content. Akamai is known for its edge computing capabilities, which enable developers to build custom logic and functionality into their CDN workflows, as well as its range of security and performance features."
     url: "https://www.akamai.com/"
     body:
     - "//script[contains(@src, 'akamai.net')]"
   AWS-CloudFront:
+    name: "AWS CloudFront"
     description: "A content delivery network from Amazon Web Services (AWS) that provides fast and scalable delivery of website content. AWS CloudFront is known for its integration with other AWS services, such as Amazon S3 and Amazon EC2, as well as its range of security and performance features."
     url: "https://aws.amazon.com/cloudfront/"
     body:

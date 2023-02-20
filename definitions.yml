@@ -97,6 +97,13 @@ cms:
     - "/html/body[@id='phpbb']"
     - "/html/body/script[contains(@src, 'prosilver/template/ajax.js')]"
     - "//form[contains(@action, 'ucp.php')]"
+  vbulletin:
+    name: "vBulletin"
+    description: "vBulletin is a popular commercial forum software that provides users with a comprehensive and highly customizable platform for building and managing online communities. It offers a range of features, including social networking, content management, and user moderation tools, as well as support for a variety of third-party add-ons and plugins."
+    url: "https://www.vbulletin.com/"
+    body:
+    - "//link[contains(@href,'/forum.php') or contains(@href,'/showthread.php') or contains(@href,'/member.php')]"
+    - "//script[contains(text(),'var vbulletin') or contains(text(),'vbmenu_register(') or contains(text(),'showforum(')]"
   mediawiki:
     name: "MediaWiki"
     description: "A free and open-source wiki software that is widely used for creating collaborative online encyclopedias and knowledge bases. MediaWiki is known for its flexibility and extensibility, and provides a range of features for organizing and managing content."

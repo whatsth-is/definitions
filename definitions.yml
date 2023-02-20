@@ -162,7 +162,7 @@ frontend:
     description: "A JavaScript framework for building web applications. Angular uses a model-view-controller (MVC) architecture and is known for its two-way data binding and dependency injection features."
     url: "https://angular.io/"
     body:
-    - "//script[contains(text(), 'angular.min.js')] | //script[contains(text(), 'ng-app')]"
+    - "//script[contains(@src,'angular') or contains(@src,'angular.min') or contains(text(),'ng-app')] and not //script[contains(text(),'AngularJS') or contains(text(),'angular-ui')]"
   vue:
     name: "Vue.js"
     description: "A progressive JavaScript framework for building user interfaces. Vue.js emphasizes the use of templates and components, and is known for its simplicity and ease of use."

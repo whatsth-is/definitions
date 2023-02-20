@@ -208,6 +208,7 @@ javascript:
     body:
     - "//script[contains(text(), 'ga(')]"
     - "//script[contains(text(), 'UA-')]"
+    - "//script[contains(@src,'google-analytics.com/analytics.js') or contains(text(),'google-analytics.com/analytics.js') or contains(@src,'google-analytics.com/ga.js') or contains(text(),'google-analytics.com/ga.js') or contains(text(),'ga(') or contains(text(),"'ga'") or contains(text(),'window[\'GoogleAnalyticsObject\']') or contains(text(),'window[\"GoogleAnalyticsObject\"]') or contains(@src,'google-analytics.com/plugins/') or contains(text(),'Google Analytics')] and not //script[contains(text(),'window[\'ga\']') or contains(text(),"window['ga']") or contains(text(),'<!-- Global site tag (gtag.js) - Google Analytics -->')]"
   d3:
     name: "D3.js"
     description: "A JavaScript library for data visualization. D3.js provides a powerful set of tools for creating interactive charts and graphs using HTML, SVG, and CSS."

@@ -63,7 +63,6 @@ cms:
     body:
     - "//meta[@name='generator' and contains(@content, 'Ghost')]"
     - "//form[@id='signin-form']"
-    - "//header[contains(@class, 'site-header')]"
   kentico:
     name: "Kentico"
     description: "A proprietary content management system (CMS) that provides a range of features for creating and managing websites, e-commerce stores, and online communities. Kentico is known for its flexible and extensible platform, and provides a range of marketing and analytics features."
@@ -144,7 +143,6 @@ cms:
     body:
     - "//meta[@name='generator' and contains(@content, 'Jekyll')]"
     - "//*[contains(text(), '---\nlayout:')]"
-    - "//header[contains(@class, 'site-header')]"
     - "/html/head/meta[contains(@content, 'ekyll')]"
   hugo:
     name: "Hugo"
@@ -152,8 +150,6 @@ cms:
     url: "https://gohugo.io/"
     body:
     - "//meta[@name='generator' and contains(@content, 'Hugo')]"
-    - "//footer[contains(@class, 'site-footer')]"
-    - "//header[contains(@class, 'site-header')]"
 frontend:
   react:
     name: "React"

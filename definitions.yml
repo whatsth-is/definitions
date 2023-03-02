@@ -194,6 +194,7 @@ frontend:
     url: "https://foundation.zurb.com/"
     body:
     - "//link[contains(@href, 'foundation.min.css')] | //script[contains(text(), 'foundation.min.js')]"
+
 javascript:
   jquery:
     name: "JQuery"
@@ -283,6 +284,38 @@ javascript:
     body:
     - "//script[contains(@src,'talk.hyvor.com/embed')]"
     - "//div[contains(@class,'hyvor-talk-widget-container')]"
+
+seo:
+  google:
+    name: "Google Analytics"
+    description: "A free web analytics service from Google that tracks and reports website traffic. Google Analytics provides detailed data on user behavior, including traffic sources, pageviews, and user demographics."
+    url: "https://marketingplatform.google.com/about/analytics/"
+    body:
+    - "//script[contains(text(), 'ga(')]"
+    - "//script[contains(text(), 'UA-')]"
+  cloudflare:
+    name: Cloudflare Analytics
+    description: Cloudflare Analytics is a website analytics tool that provides insights into website traffic, performance, and security. It is offered as part of the Cloudflare suite of web performance and security tools.
+    url: https://www.cloudflare.com/products/cloudflare-analytics/
+    body:
+    - "//script[contains(@src,'cloudflareinsights.com/cdn-cgi/scripts')]"
+    - "//script[contains(@src,'cloudflare.com/cdn-cgi/scripts')]"
+    - "//script[contains(text(),'__cf_analytics')]"
+  plausible:
+    name: Plausible Analytics
+    description: Plausible Analytics is a simple, lightweight website analytics tool that focuses on user privacy and data ownership. It provides insights into website traffic and engagement, without collecting or sharing any personal data.
+    url: https://plausible.io/
+    body:
+    - "//script[contains(@src,'plausible.io/js')]"
+    - "//script[contains(text(),'plausible.track(')]"
+  yoast:
+    name: Plausible Analytics
+    description: Plausible Analytics is a simple, lightweight website analytics tool that focuses on user privacy and data ownership. It provides insights into website traffic and engagement, without collecting or sharing any personal data.
+    url: https://plausible.io/
+    body:
+    - "//script[contains(@src,'plausible.io/js')]"
+    - "//script[contains(text(),'plausible.track(')]"
+
 cdn:
   Fastly:
     name: "Fastly"

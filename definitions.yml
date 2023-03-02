@@ -309,12 +309,13 @@ seo:
       - "//script[contains(@src,'plausible.io/js')]"
       - "//script[contains(text(),'plausible.track(')]"
   yoast:
-    name: Plausible Analytics
-    description: Plausible Analytics is a simple, lightweight website analytics tool that focuses on user privacy and data ownership. It provides insights into website traffic and engagement, without collecting or sharing any personal data.
-    url: https://plausible.io/
+    name: Yoast SEO
+    description: Yoast SEO is a popular plugin for WordPress that helps website owners optimize their content for search engines. It provides a range of features, including XML sitemap generation, keyword analysis, and content analysis tools.
+    url: https://yoast.com/wordpress/plugins/seo/
     body:
-      - "//script[contains(@src,'plausible.io/js')]"
-      - "//script[contains(text(),'plausible.track(')]"
+      - "//meta[@name='generator'][contains(@content,'Yoast SEO')]"
+      - "//link[contains(@href,'/yoast-seo/')]"
+
 
 cdn:
   Fastly:

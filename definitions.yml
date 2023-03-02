@@ -309,6 +309,19 @@ seo:
     body:
       - "//meta[@name='generator'][contains(@content,'Yoast SEO')]"
       - "//link[contains(@href,'/yoast-seo/')]"
+  chartbeat:
+    name: Chartbeat
+    description: Chartbeat is a website analytics tool that provides real-time insights into website traffic, engagement, and performance. It is often used by publishers and media companies to monitor reader behavior and optimize content strategies.
+    url: https://chartbeat.com/
+    body:
+      - "//script[contains(@src,'chartbeat.com')]"
+  hotjar:
+    name: Hotjar
+    description: Hotjar is a website analytics and feedback tool that provides insights into user behavior and feedback. It includes features such as heatmaps, visitor recordings, surveys, and more.
+    url: https://www.hotjar.com/
+    body:
+      - "//script[contains(@src,'hotjar.com/c/hotjar-')]"
+      - "//script[contains(text(),'h,o,t,j,a,r')]"
 
 cdn:
   Fastly:

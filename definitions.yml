@@ -269,6 +269,20 @@ javascript:
     url: "https://wistia.com/"
     body:
     - "//script[contains(@src, 'wistia.com')]"
+  disqus:
+    name: "Disqus"
+    description: "Disqus is a widely-used commenting platform that enables website owners to add interactive comment sections to their sites. It offers a range of features, including social media integration, moderation tools, and user engagement metrics, and is designed to help increase user engagement and build a sense of community on the site."
+    url: "https://disqus.com/"
+    body:
+    - "//div[contains(@id,'disqus') or contains(@class,'disqus') or contains(@class,'disqus_thread') or contains(@class,'disqus-widget')]"
+    - "//script[contains(text(),'var disqus_') or contains(text(),'disqus_config=')]"
+  hyvor:
+    name: "Hyvor Talk"
+    description: "Hyvor Talk is a fast and privacy-focused commenting platform that allows website owners to add comments to their site without compromising their users' privacy. It offers a range of features, including real-time commenting, customizable widgets, and anti-spam measures."
+    url: "https://talk.hyvor.com/"
+    body:
+    - "//script[contains(@src,'talk.hyvor.com/embed')]"
+    - "//div[contains(@class,'hyvor-talk-widget-container')]"
 cdn:
   Fastly:
     name: "Fastly"

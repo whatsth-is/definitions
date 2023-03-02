@@ -157,6 +157,7 @@ cms:
     url: "https://gohugo.io/"
     body:
       - "//meta[@name='generator' and contains(@content, 'Hugo')]"
+
 frontend:
   react:
     name: "React"
@@ -209,13 +210,6 @@ javascript:
     body:
       - "//script[contains(text(), 'google_tag_manager')]"
       - "//iframe[contains(@src, 'www.googletagmanager.com/ns.html?id=')]"
-  google-analytics:
-    name: "Google Analytics"
-    description: "A free web analytics service from Google that tracks and reports website traffic. Google Analytics provides detailed data on user behavior, including traffic sources, pageviews, and user demographics."
-    url: "https://marketingplatform.google.com/about/analytics/"
-    body:
-      - "//script[contains(text(), 'ga(')]"
-      - "//script[contains(text(), 'UA-')]"
   d3:
     name: "D3.js"
     description: "A JavaScript library for data visualization. D3.js provides a powerful set of tools for creating interactive charts and graphs using HTML, SVG, and CSS."
@@ -315,7 +309,6 @@ seo:
     body:
       - "//meta[@name='generator'][contains(@content,'Yoast SEO')]"
       - "//link[contains(@href,'/yoast-seo/')]"
-
 
 cdn:
   Fastly:

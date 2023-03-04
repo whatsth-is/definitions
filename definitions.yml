@@ -334,6 +334,8 @@ cdn:
     name: "Cloudflare"
     description: "A content delivery network that provides fast and secure delivery of website content. Cloudflare is known for its edge computing capabilities, which enable developers to build custom logic and functionality into their CDN workflows, as well as its range of security features, including DDoS protection and Web Application Firewall (WAF) capabilities."
     url: "https://www.cloudflare.com/"
+    headers:
+      - "server: \\bcloudflare\\b"
     body:
       - "//script[contains(@src, 'cloudflare.com')]"
   Akamai:

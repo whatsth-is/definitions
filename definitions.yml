@@ -371,13 +371,13 @@ server:
     description: Apache HTTP Server is a web server software that powers millions of websites around the world. It's known for its stability, performance, and modularity, and supports a wide range of web technologies and programming languages.
     url: https://httpd.apache.org/
     headers:
-      - "server: \\bnginx\\b"
+      - "server: \\bapache\\b"
   nginx:
     name: Nginx
     description: Nginx is a web server that can also be used as a reverse proxy, load balancer, and HTTP cache. It's known for its high performance, stability, and low resource usage.
     url: https://nginx.org/
     headers:
-      - "server: \\bapache\\b"
+      - "server: \\bnginx\\b"
   kestrel:
     name: Kestrel
     description: Kestrel is a cross-platform web server that's built into the ASP.NET Core framework. It provides a fast and scalable way to host web applications and APIs on Linux, macOS, and Windows, and can be used as a standalone server or behind a reverse proxy like Nginx or Apache. Kestrel is open-source and supports HTTP/1.x and HTTP/2 protocols.

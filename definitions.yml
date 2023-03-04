@@ -398,3 +398,9 @@ server:
     url: https://varnish-cache.org/
     headers:
       - "via: \\bvarnish\\b"
+  github:
+    name: GitHub Pages
+    description: GitHub Pages is a free web hosting service that allows you to create and publish static websites directly from your GitHub repositories. It's designed to be easy to use and requires no server configuration or maintenance. GitHub Pages supports custom domains, SSL encryption, and Jekyll, a popular static site generator.
+    url: https://pages.github.com/
+    headers:
+      - "x-github-request-id: (.*)"

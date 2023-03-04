@@ -348,3 +348,51 @@ cdn:
     url: "https://aws.amazon.com/cloudfront/"
     body:
       - "//script[contains(@src, 'cloudfront.net')]"
+
+language:
+  aspnet:
+    name: ASP.NET
+    description: ASP.NET is a free and open-source web framework for building dynamic web applications and services with .NET. It provides a powerful set of libraries, tools, and APIs for developing and deploying web applications, and supports a wide range of programming languages and platforms.
+    url: https://dotnet.microsoft.com/apps/aspnet
+    headers:
+      - "x-powered-by: ASP.NET"
+  java:
+    name: Java
+    description: Java is a general-purpose programming language that is designed to be platform-independent and write-once-run-anywhere. It's widely used for building enterprise and web applications, mobile apps, and games, and provides a rich set of libraries, tools, and frameworks for developers.
+    url: https://www.java.com/
+  php:
+    name: PHP
+    description: PHP is a server-side scripting language that is widely used for web development. It provides a powerful set of features and libraries for building dynamic and interactive web applications, and can be embedded in HTML and other markup languages. PHP is open-source and runs on multiple platforms.
+    url: https://www.php.net/
+
+server:
+  apache:
+    name: Apache HTTP Server
+    description: Apache HTTP Server is a web server software that powers millions of websites around the world. It's known for its stability, performance, and modularity, and supports a wide range of web technologies and programming languages.
+    url: https://httpd.apache.org/
+    headers:
+      - "server: \\bnginx\\b"
+  nginx:
+    name: Nginx
+    description: Nginx is a web server that can also be used as a reverse proxy, load balancer, and HTTP cache. It's known for its high performance, stability, and low resource usage.
+    url: https://nginx.org/
+    headers:
+      - "server: \\bapache\\b"
+  kestrel:
+    name: Kestrel
+    description: Kestrel is a cross-platform web server that's built into the ASP.NET Core framework. It provides a fast and scalable way to host web applications and APIs on Linux, macOS, and Windows, and can be used as a standalone server or behind a reverse proxy like Nginx or Apache. Kestrel is open-source and supports HTTP/1.x and HTTP/2 protocols.
+    url: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel
+    headers:
+      - "server: \\bKestrel\\b"
+  ubuntu:
+    name: Ubuntu
+    description: Ubuntu is a free and open-source Linux operating system based on the Debian architecture. It's known for its ease of use, stability, and security, and includes a wide range of software packages and tools for desktop and server environments.
+    url: https://ubuntu.com/
+    headers:
+      - "server: \\bubuntu\\b"
+  varnish:
+    name: Varnish
+    description: Varnish is an HTTP accelerator and cache that sits in front of a web server and serves cached content to clients. It's designed to improve website performance and reduce server load by caching frequently accessed content.
+    url: https://varnish-cache.org/
+    headers:
+      - "via: \\bvarnish\\b"
